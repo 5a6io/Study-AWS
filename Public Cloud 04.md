@@ -1,7 +1,5 @@
 # Public Cloud 04
 
-Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architecting_on_Cloud_-_2._Computing__Storage.pdf
-
 ## AWS Cloud Network Service
 
 ### CloudFront
@@ -43,30 +41,30 @@ Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architec
 > Quick Start가 아닌 OpenVPN 검색
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled.png)
+![Untitled](Public%20Cloud%2004/Untitled.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%201.png)
+![Untitled](Public%20Cloud%2004/Untitled%201.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%202.png)
+![Untitled](Public%20Cloud%2004/Untitled%202.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%203.png)
+![Untitled](Public%20Cloud%2004/Untitled%203.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%204.png)
+![Untitled](Public%20Cloud%2004/Untitled%204.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%205.png)
+![Untitled](Public%20Cloud%2004/Untitled%205.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%206.png)
+![Untitled](Public%20Cloud%2004/Untitled%206.png)
 
 > admin으로 로그인 후
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%207.png)
+![Untitled](Public%20Cloud%2004/Untitled%207.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%208.png)
+![Untitled](Public%20Cloud%2004/Untitled%208.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%209.png)
+![Untitled](Public%20Cloud%2004/Untitled%209.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2010.png)
+![Untitled](Public%20Cloud%2004/Untitled%2010.png)
 
 ### Elastic Load Balancer
 
@@ -84,63 +82,63 @@ Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architec
 
 1. 인증서 생성
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2011.png)
+![Untitled](Public%20Cloud%2004/Untitled%2011.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2012.png)
+![Untitled](Public%20Cloud%2004/Untitled%2012.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2013.png)
+![Untitled](Public%20Cloud%2004/Untitled%2013.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2014.png)
+![Untitled](Public%20Cloud%2004/Untitled%2014.png)
 
 → 맨 밑 6줄 삭제. 인스턴스 재시작 시에도 streamlit이 재시작할 수 있도록 하기 위함.
 
 → EC2에서 파일을 변경하였으므로 이미지 재생성.
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2015.png)
+![Untitled](Public%20Cloud%2004/Untitled%2015.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2016.png)
+![Untitled](Public%20Cloud%2004/Untitled%2016.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2017.png)
+![Untitled](Public%20Cloud%2004/Untitled%2017.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2018.png)
+![Untitled](Public%20Cloud%2004/Untitled%2018.png)
 
 > Load Balancer Listener 등록
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2019.png)
+![Untitled](Public%20Cloud%2004/Untitled%2019.png)
 
 → 인증서가 들어가 경고문고가 뜨지 않음.
 
 > 리스너 편집
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2020.png)
+![Untitled](Public%20Cloud%2004/Untitled%2020.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2021.png)
+![Untitled](Public%20Cloud%2004/Untitled%2021.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/836bf5f5-7e38-46b2-9c2f-e679e45c68b2.png)
+![Untitled](Public%20Cloud%2004/836bf5f5-7e38-46b2-9c2f-e679e45c68b2.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/afbc5a72-0f30-4b7f-9a69-e297530b8556.png)
+![Untitled](Public%20Cloud%2004/afbc5a72-0f30-4b7f-9a69-e297530b8556.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2022.png)
+![Untitled](Public%20Cloud%2004/Untitled%2022.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2023.png)
+![Untitled](Public%20Cloud%2004/Untitled%2023.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2024.png)
+![Untitled](Public%20Cloud%2004/Untitled%2024.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2025.png)
+![Untitled](Public%20Cloud%2004/Untitled%2025.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2026.png)
+![Untitled](Public%20Cloud%2004/Untitled%2026.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2027.png)
+![Untitled](Public%20Cloud%2004/Untitled%2027.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2028.png)
+![Untitled](Public%20Cloud%2004/Untitled%2028.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2029.png)
+![Untitled](Public%20Cloud%2004/Untitled%2029.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2030.png)
+![Untitled](Public%20Cloud%2004/Untitled%2030.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2031.png)
+![Untitled](Public%20Cloud%2004/Untitled%2031.png)
 
 ### Lambda
 
@@ -188,11 +186,11 @@ bastion
 
 ### EBS Volume 생성 및 추가 연결
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2032.png)
+![Untitled](Public%20Cloud%2004/Untitled%2032.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2033.png)
+![Untitled](Public%20Cloud%2004/Untitled%2033.png)
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2034.png)
+![Untitled](Public%20Cloud%2004/Untitled%2034.png)
 
 ```bash
 AWSReservedSSO_AdministratorAccess_c3f9c44a58eb4f25:~/environment $ ssh network-01
@@ -304,12 +302,12 @@ total 0
 
 ### EFS 생성 및 연동
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2035.png)
+![Untitled](Public%20Cloud%2004/Untitled%2035.png)
 
 > 파일 시스템 생성 → 사용자 지정
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2036.png)
+![Untitled](Public%20Cloud%2004/Untitled%2036.png)
 
 ```bash
 # EFS를 마운트
@@ -320,7 +318,7 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 > web-server와 network-02에 마운트 후 확인.
 > 
 
-![Untitled](Public%20Cloud%2004%20d9c5a4b826c745799fc786967aff3aec/Untitled%2037.png)
+![Untitled](Public%20Cloud%2004/Untitled%2037.png)
 
 > /etc/fstab에 저장 후 마운트 해제
 > 
