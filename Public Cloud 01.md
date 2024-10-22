@@ -1,7 +1,5 @@
 # Public Cloud 01
 
-Files & media: streamlit-project-main.zip, %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter02._Cloud_Fundermental.pdf, %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter03._Foundation_Architecture_Configuration.pdf
-
 ## Cloud Computing Deployment Model
 
 ### Public Cloud
@@ -89,13 +87,13 @@ Production
 
 1. VPC 생성
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled.png)
+![Untitled](Public%20Cloud%2001/Untitled.png)
 
 1. Public Subnet 2개 생성.
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%201.png)
+![Untitled](Public%20Cloud%2001/Untitled%201.png)
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%202.png)
+![Untitled](Public%20Cloud%2001/Untitled%202.png)
 
 1. Private Subnet 2개 생성.
 2. Internet Gateway 생성.
@@ -107,12 +105,12 @@ Production
 > lab-edu-rtb-pri-01
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%203.png)
+![Untitled](Public%20Cloud%2001/Untitled%203.png)
 
 > lab-edu-rtb-pri-02
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%204.png)
+![Untitled](Public%20Cloud%2001/Untitled%204.png)
 
 ## Computing Resource Configuration
 
@@ -197,9 +195,9 @@ streamlit run main.py --server.port 80
 > lab-edu-ec2-web 생성.
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%205.png)
+![Untitled](Public%20Cloud%2001/Untitled%205.png)
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%206.png)
+![Untitled](Public%20Cloud%2001/Untitled%206.png)
 
 > bastion에서 web-server로 접속
 > 
@@ -269,16 +267,16 @@ git pull origin main
 > cloud9 생성
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%207.png)
+![Untitled](Public%20Cloud%2001/Untitled%207.png)
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%208.png)
+![Untitled](Public%20Cloud%2001/Untitled%208.png)
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%209.png)
+![Untitled](Public%20Cloud%2001/Untitled%209.png)
 
 > cloud9에 EC2 pem key를 업로드하여 bastion과 web server 접속 테스트
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%2010.png)
+![Untitled](Public%20Cloud%2001/Untitled%2010.png)
 
 → web-server는 cloud9에서 ssh로 접속이 가능하나, bastion은 접속이 불가능.
 
@@ -287,7 +285,7 @@ git pull origin main
 > bastion 인바운드 규칙에 10.0.0.6/16을 추가하여 접속이 가능하게 됨.
 > 
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%2011.png)
+![Untitled](Public%20Cloud%2001/Untitled%2011.png)
 
 ### Elastic Load Balancer
 
@@ -300,7 +298,7 @@ git pull origin main
 2. Load Balancer Target Group 생성
 3. Load Balancer 생성
 
-![Untitled](Public%20Cloud%2001%209d2859d3c9b04d6da724f490e84da6fa/Untitled%2012.png)
+![Untitled](Public%20Cloud%2001/Untitled%2012.png)
 
 ### Relational Database
 
