@@ -1,7 +1,5 @@
 # Public Cloud 02
 
-Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architecting_on_Cloud_-_1._Networke.pdf
-
 ## Review
 
 ### IaaS, SaaS, PaaS
@@ -28,29 +26,29 @@ Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architec
 
 > 사용자 새로 생성.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled.png)
+![Untitled](Public%20Cloud%2002/Untitled.png)
 
 > Administrator Access 권한 부여
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%201.png)
+![Untitled](Public%20Cloud%2002/Untitled%201.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%202.png)
+![Untitled](Public%20Cloud%2002/Untitled%202.png)
 
 > https://339712890055.signin.aws.amazon.com/console로 접속
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%203.png)
+![Untitled](Public%20Cloud%2002/Untitled%203.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%204.png)
+![Untitled](Public%20Cloud%2002/Untitled%204.png)
 
 → Administrator Access 권한이 있어서 인스턴스를 관리할 수 있음.
 
 > 권한 삭제 후 EC2 콘솔 재접속.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%205.png)
+![Untitled](Public%20Cloud%2002/Untitled%205.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%206.png)
+![Untitled](Public%20Cloud%2002/Untitled%206.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%207.png)
+![Untitled](Public%20Cloud%2002/Untitled%207.png)
 
 → 권한이 부여되지 않아 오류가 발생.
 
@@ -58,9 +56,9 @@ Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architec
 
 > ReadOnlyAccess 권한을 부여.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%208.png)
+![Untitled](Public%20Cloud%2002/Untitled%208.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%209.png)
+![Untitled](Public%20Cloud%2002/Untitled%209.png)
 
 > Access Key에 대한 정보를 Bastion 서버에 입력.
 
@@ -92,27 +90,27 @@ Collecting usage statistics. To deactivate, set browser.gatherUsageStats to Fals
 
 > configure로 user에 대한 정보를 입력한 후 80번 포트를 열고 43.203.233.160로 접속
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2010.png)
+![Untitled](Public%20Cloud%2002/Untitled%2010.png)
 
 ### IAM role 생성
 
 > lab-edu-role-ec2 새 역할 생성.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2011.png)
+![Untitled](Public%20Cloud%2002/Untitled%2011.png)
 
 > Administrator Access 권한 설정.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2012.png)
+![Untitled](Public%20Cloud%2002/Untitled%2012.png)
 
 > lab-edu-role-ec2를 lab-edu-ec2-web-server에 부여
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2013.png)
+![Untitled](Public%20Cloud%2002/Untitled%2013.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2014.png)
+![Untitled](Public%20Cloud%2002/Untitled%2014.png)
 
 > 로드밸런서의 dns를 통해 lab-edu-alb-web-1086277303.ap-northeast-2.elb.amazonaws.com로 접속하여 web-server 확인
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2015.png)
+![Untitled](Public%20Cloud%2002/Untitled%2015.png)
 
 ## Dev Tools Resource Configuration
 
@@ -133,9 +131,9 @@ AWS CI/CD
 
 > CodeCommit Repository 생성 → Local에 실습 코드 다운로드
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2016.png)
+![Untitled](Public%20Cloud%2002/Untitled%2016.png)
 
-[GitHub - sh1517/streamlit-project](https://github.com/sh1517/streamlit-project/tree/main)
+
 
 > ssh key 생성
 
@@ -165,15 +163,15 @@ The key's randomart image is:
 
 > lab-edu-iam-user-01 사용자에게 AWSCommitFullAccess 권한 부여
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2017.png)
+![Untitled](Public%20Cloud%2002/Untitled%2017.png)
 
 > 이전에 만든 ssh의 publice key에 대한 정보 업로드
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2018.png)
+![Untitled](Public%20Cloud%2002/Untitled%2018.png)
 
 > Config에 user에 대한 정보 기록
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2019.png)
+![Untitled](Public%20Cloud%2002/Untitled%2019.png)
 
 > Config의 정보를 이용하여 ssh push 테스트
 
@@ -215,7 +213,7 @@ To ssh://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/lab-edu-code-strea
 
 → ssh를 이용하여 AWS의 생성한 repository에 파일 업로드
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2020.png)
+![Untitled](Public%20Cloud%2002/Untitled%2020.png)
 
 ### CodeDeploy 생성
 
@@ -241,24 +239,24 @@ systemctl start codedeploy-agent    # sudo service codedeploy-agent start
 
 > CodeDeploy IAM Role 생성
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2021.png)
+![Untitled](Public%20Cloud%2002/Untitled%2021.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2022.png)
+![Untitled](Public%20Cloud%2002/Untitled%2022.png)
 
 > CodeDeploy Application & Deploy 생성
 > 애플리케이션 생성 후 배포그룹 생
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2023.png)
+![Untitled](Public%20Cloud%2002/Untitled%2023.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2024.png)
+![Untitled](Public%20Cloud%2002/Untitled%2024.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2025.png)
+![Untitled](Public%20Cloud%2002/Untitled%2025.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2026.png)
+![Untitled](Public%20Cloud%2002/Untitled%2026.png)
 
 > 변경 후 오류 발생.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2027.png)
+![Untitled](Public%20Cloud%2002/Untitled%2027.png)
 
 → codedeploy-agent를 삭제하고 재시도
 
@@ -275,7 +273,7 @@ Deploy 실패한 작업 재시도 후 로드밸런서 dns로 web-server 접속.
 
 start stress test
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2028.png)
+![Untitled](Public%20Cloud%2002/Untitled%2028.png)
 
 autoscaling
 
@@ -313,7 +311,7 @@ aws s3 cp "%FILE_PATH%\%FILE_NAME%" s3://%BUCKET_NAME%/%OBJ_NAME%
 1. YAML Template 이용 VPC 생성
 - YAML Template 파일 구성 확인
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2029.png)
+![Untitled](Public%20Cloud%2002/Untitled%2029.png)
 
 - 객체 URL 정보 확인 → URL 정보 복사
 
@@ -322,11 +320,11 @@ set OBJ_URL=https://%BUCKET_NAME%.s3.amazonaws.com/%OBJ_NAME%
 echo %OBJ_URL%
 ```
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2030.png)
+![Untitled](Public%20Cloud%2002/Untitled%2030.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2031.png)
+![Untitled](Public%20Cloud%2002/Untitled%2031.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2032.png)
+![Untitled](Public%20Cloud%2002/Untitled%2032.png)
 
 > Parameter Section을 활용해 Public Subnet 생성
 
@@ -342,9 +340,9 @@ echo %OBJ_URL%
 
 - CloudFormation 메인 콘솔 화면에서 스택 리소스 탭 → lab-edu-cf-network-baseline-ap 스택 선택 후 업데이트
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2033.png)
+![Untitled](Public%20Cloud%2002/Untitled%2033.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2034.png)
+![Untitled](Public%20Cloud%2002/Untitled%2034.png)
 
 1. 01.vpc_resource.yaml로 적용되어있던 스택 세부 정보를 02.subnet_resource.yaml로 업데이트
 
@@ -426,7 +424,7 @@ Resources:
           Value: !Ref PublicSubnet02Id
 ```
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2035.png)
+![Untitled](Public%20Cloud%2002/Untitled%2035.png)
 
 → Public Subnet 구성 추가
 
@@ -441,11 +439,11 @@ echo %OBJ_URL%
 
 - 기존 템플릿을 현재 올린 템플릿으로 교체
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2036.png)
+![Untitled](Public%20Cloud%2002/Untitled%2036.png)
 
 1. resource_output.yaml 적용.
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2037.png)
+![Untitled](Public%20Cloud%2002/Untitled%2037.png)
 
 > Label로 그룹이름 설정.
 
@@ -506,11 +504,11 @@ aws s3 cp "%FILE_PATH%\%FILE_NAME%" s3://%BUCKET_NAME%/%OBJ_NAME%
 echo %OBJ_URL%
 ```
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2038.png)
+![Untitled](Public%20Cloud%2002/Untitled%2038.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2039.png)
+![Untitled](Public%20Cloud%2002/Untitled%2039.png)
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2040.png)
+![Untitled](Public%20Cloud%2002/Untitled%2040.png)
 
 ```bash
 # IaC 코드 파일이 있는 폴더로 이동
@@ -543,7 +541,7 @@ ParameterKey=AvailabilityZoneSubnet01,ParameterValue=%REGION%a ^
 ParameterKey=AvailabilityZoneSubnet02,ParameterValue=%REGION%c
 ```
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2041.png)
+![Untitled](Public%20Cloud%2002/Untitled%2041.png)
 
 1. 프랑크프루트 리전 network_baseline.yaml 배포
 
@@ -563,7 +561,7 @@ ParameterKey=AvailabilityZoneSubnet01,ParameterValue=%REGION%a ^
 ParameterKey=AvailabilityZoneSubnet02,ParameterValue=%REGION%c
 ```
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2042.png)
+![Untitled](Public%20Cloud%2002/Untitled%2042.png)
 
 ## Network
 
@@ -595,4 +593,4 @@ ParameterKey=AvailabilityZoneSubnet02,ParameterValue=%REGION%c
 
 ## Route 53 Policy 구성 실습
 
-![Untitled](Public%20Cloud%2002%20776b222c6bdc4abeb80d7f81b40fc70f/Untitled%2043.png)
+![Untitled](Public%20Cloud%2002/Untitled%2043.png)
