@@ -1,7 +1,5 @@
 # Public Cloud 05
 
-Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architecting_on_Cloud_-_3._Security_.pdf, %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architecting_on_Cloud_-_4._Management.pdf, %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter05._Wrap_Up.pdf
-
 ## Database System
 
 ### RDS
@@ -100,11 +98,11 @@ Files & media: %25EA%25B5%2590%25EC%259E%25AC_Public_Cloud_-_Chapter04._Architec
 
 ## Amazon S3 생성 및 웹 호스팅 설정
 
-![Untitled](Public%20Cloud%2005%203adce9b937ce4acb94289d88c687eacb/Untitled.png)
+![Untitled](Public%20Cloud%2005/Untitled.png)
 
-![Untitled](Public%20Cloud%2005%203adce9b937ce4acb94289d88c687eacb/Untitled%201.png)
+![Untitled](Public%20Cloud%2005/Untitled%201.png)
 
-![Untitled](Public%20Cloud%2005%203adce9b937ce4acb94289d88c687eacb/Untitled%202.png)
+![Untitled](Public%20Cloud%2005/Untitled%202.png)
 
 새 OAI 생성 → CloudFront가 ID를 생성해줌.
 
