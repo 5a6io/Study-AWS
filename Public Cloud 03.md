@@ -17,12 +17,12 @@ Routing Policy → Simple, Weighted, Latency, Failover, Geolocation
 > eu ip만 넣고 dns로 접속 시도.
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled.png)
+![Untitled](Public%20Cloud%2003/Untitled.png)
 
 > us ip 추가
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%201.png)
+![Untitled](Public%20Cloud%2003/Untitled%201.png)
 
 > cloud9 ide에서 확인
 > 
@@ -54,9 +54,9 @@ simple.st17.cj-cloud-wave.com. 1 IN     A       44.201.57.172
 > load balancer dns 추가
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%202.png)
+![Untitled](Public%20Cloud%2003/Untitled%202.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%203.png)
+![Untitled](Public%20Cloud%2003/Untitled%203.png)
 
 ```bash
 dig simple.st17.cj-cloud-wave.com
@@ -84,23 +84,23 @@ simple.st17.cj-cloud-wave.com. 60 IN    A       15.165.125.111
 
 ### Weighted
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%204.png)
+![Untitled](Public%20Cloud%2003/Untitled%204.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%205.png)
+![Untitled](Public%20Cloud%2003/Untitled%205.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%206.png)
+![Untitled](Public%20Cloud%2003/Untitled%206.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%207.png)
+![Untitled](Public%20Cloud%2003/Untitled%207.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%208.png)
+![Untitled](Public%20Cloud%2003/Untitled%208.png)
 
 ### Latency
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%209.png)
+![Untitled](Public%20Cloud%2003/Untitled%209.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2010.png)
+![Untitled](Public%20Cloud%2003/Untitled%2010.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2011.png)
+![Untitled](Public%20Cloud%2003/Untitled%2011.png)
 
 > 서울 리전에 생성한 cloud9에서 dig 명령 입력
 > 
@@ -186,22 +186,22 @@ latency.st17.cj-cloud-wave.com. 1 IN    A       3.127.217.245
 > 상태 검사기 생성
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2012.png)
+![Untitled](Public%20Cloud%2003/Untitled%2012.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2013.png)
+![Untitled](Public%20Cloud%2003/Untitled%2013.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2014.png)
+![Untitled](Public%20Cloud%2003/Untitled%2014.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2015.png)
+![Untitled](Public%20Cloud%2003/Untitled%2015.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2016.png)
+![Untitled](Public%20Cloud%2003/Untitled%2016.png)
 
 > 레코드 생성
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2017.png)
+![Untitled](Public%20Cloud%2003/Untitled%2017.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2018.png)
+![Untitled](Public%20Cloud%2003/Untitled%2018.png)
 
 > 서울 리전 web-server 강제종료.
 > 
@@ -211,14 +211,14 @@ pgrep streamlit >> 87149
 kill -9 87149
 ```
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2019.png)
+![Untitled](Public%20Cloud%2003/Untitled%2019.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2020.png)
+![Untitled](Public%20Cloud%2003/Untitled%2020.png)
 
 > 서울 리전이 비정상으로 되어 버지니아 리전으로 넘어감.
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2021.png)
+![Untitled](Public%20Cloud%2003/Untitled%2021.png)
 
 > 서울 리전 web-server 실행.
 > 
@@ -227,20 +227,20 @@ kill -9 87149
 streamlit run streamlit-project/main.py --server.port 80 &
 ```
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2022.png)
+![Untitled](Public%20Cloud%2003/Untitled%2022.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2023.png)
+![Untitled](Public%20Cloud%2003/Untitled%2023.png)
 
 ### Geolocation
 
 > 레코드 생성
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2024.png)
+![Untitled](Public%20Cloud%2003/Untitled%2024.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2025.png)
+![Untitled](Public%20Cloud%2003/Untitled%2025.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2026.png)
+![Untitled](Public%20Cloud%2003/Untitled%2026.png)
 
 > default local dns
 > 
@@ -359,23 +359,23 @@ Configuration created successfully: /home/ec2-user/.ssh/config
 
 1. VPC Peering Resource 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2027.png)
+![Untitled](Public%20Cloud%2003/Untitled%2027.png)
 
 → 피어링 연결 탭을 누른 후 수락 대기 중인 리소스의 연결을 수락함.
 
 > lab-edu-rtb-pri-01 routing table 수정.
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2028.png)
+![Untitled](Public%20Cloud%2003/Untitled%2028.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2029.png)
+![Untitled](Public%20Cloud%2003/Untitled%2029.png)
 
 > lab-edu-rtb-2nd-pri routing table 수정. (명시적 서브넷: 2nd-pri-01)
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2030.png)
+![Untitled](Public%20Cloud%2003/Untitled%2030.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2031.png)
+![Untitled](Public%20Cloud%2003/Untitled%2031.png)
 
 ```bash
 ping 10.10.40.228
@@ -392,13 +392,13 @@ PING 10.10.40.228 (10.10.40.228) 56(84) bytes of data.
 > 프랑크푸르트 리전에서 피어링 연결 생성.
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2032.png)
+![Untitled](Public%20Cloud%2003/Untitled%2032.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2033.png)
+![Untitled](Public%20Cloud%2003/Untitled%2033.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2034.png)
+![Untitled](Public%20Cloud%2003/Untitled%2034.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2035.png)
+![Untitled](Public%20Cloud%2003/Untitled%2035.png)
 
 ```bash
 ping 10.30.40.54
@@ -437,31 +437,31 @@ rtt min/avg/max/mdev = 225.984/225.997/226.024/0.014 ms
 
 1. Transit Gateway Subnet 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2036.png)
+![Untitled](Public%20Cloud%2003/Untitled%2036.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2037.png)
+![Untitled](Public%20Cloud%2003/Untitled%2037.png)
 
 1. 서울 리전 간의 Transit Gateway 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2038.png)
+![Untitled](Public%20Cloud%2003/Untitled%2038.png)
 
 1. Transit Gateway attach 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2039.png)
+![Untitled](Public%20Cloud%2003/Untitled%2039.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2040.png)
+![Untitled](Public%20Cloud%2003/Untitled%2040.png)
 
 1. Transit Gateway Routing Table 설정
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2041.png)
+![Untitled](Public%20Cloud%2003/Untitled%2041.png)
 
 1. lab-edu-rtb-pri-01 routing table 수정
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2042.png)
+![Untitled](Public%20Cloud%2003/Untitled%2042.png)
 
 1. lab-edu-rtb-2nd-pri-01 routing table 수정
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2043.png)
+![Untitled](Public%20Cloud%2003/Untitled%2043.png)
 
 1. lab-edu-ec2-network-2nd-ap로 ping
 
@@ -484,29 +484,29 @@ rtt min/avg/max/mdev = 0.644/0.720/0.899/0.096 ms
 > 
 1. 프랑크푸르트에 Transit Gateway 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2044.png)
+![Untitled](Public%20Cloud%2003/Untitled%2044.png)
 
 1. 프랑크푸르트 리전 Transit Gateway Attach 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2045.png)
+![Untitled](Public%20Cloud%2003/Untitled%2045.png)
 
 1. 프랑크푸르트와 서울 리전 간의 Transit Gateway Attach 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2046.png)
+![Untitled](Public%20Cloud%2003/Untitled%2046.png)
 
 1. 프랑크푸르트 리전에서 보낸 요청을 서울 리전 Gateway연결 탭에서 수락.
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2047.png)
+![Untitled](Public%20Cloud%2003/Untitled%2047.png)
 
 1. 프랑크푸르트 lab-edu-tgw-att-peering-eu에 정적 경로 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2048.png)
+![Untitled](Public%20Cloud%2003/Untitled%2048.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2049.png)
+![Untitled](Public%20Cloud%2003/Untitled%2049.png)
 
 1. 서울 lab-edu-tgw-att-peering-eu에 정적 경로 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2050.png)
+![Untitled](Public%20Cloud%2003/Untitled%2050.png)
 
 1. vpc routing table 수정
 - 서울 리전 lab-edu-rtb-pri-01에서 10.30.0.0/16 transit gateway(lab-edu-tgw-att-ap01) 추가
@@ -532,19 +532,19 @@ rtt min/avg/max/mdev = 228.391/228.842/230.493/0.825 ms
 > 
 1. 서울 리전 Custom Gateway 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2051.png)
+![Untitled](Public%20Cloud%2003/Untitled%2051.png)
 
 1. 서울 리전 Site to Site VPN 리소스 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2052.png)
+![Untitled](Public%20Cloud%2003/Untitled%2052.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2053.png)
+![Untitled](Public%20Cloud%2003/Untitled%2053.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2054.png)
+![Untitled](Public%20Cloud%2003/Untitled%2054.png)
 
 1. lab-edu-s2vpn-ap 구성 다운로드
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2055.png)
+![Untitled](Public%20Cloud%2003/Untitled%2055.png)
 
 1. 버지니아 session manager에 openswan 서버 설정
 - openswan 먼저 설치한 후 설정.
@@ -566,7 +566,7 @@ vim /etc/ipsec.d/aws.conf
 ```
 
 ![letid → openswan public ip
-right → seoul s2s vpn 외부 주소](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2056.png)
+right → seoul s2s vpn 외부 주소](Public%20Cloud%2003/Untitled%2056.png)
 
 letid → openswan public ip
 right → seoul s2s vpn 외부 주소
@@ -590,19 +590,19 @@ systemctl restart ipsec
 systemctl status ipsec
 ```
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2057.png)
+![Untitled](Public%20Cloud%2003/Untitled%2057.png)
 
 1. 서울 리전 lab-edu-tgwrtb-ap transit gateway routing table 수정
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2058.png)
+![Untitled](Public%20Cloud%2003/Untitled%2058.png)
 
 1. 서울리전 lab-edu-rtb-pri-01 Routing Table 수정.
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2059.png)
+![Untitled](Public%20Cloud%2003/Untitled%2059.png)
 
 1. 버지니아 리전 lab-edu-rtb-us-pri Routing Table 수정.
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2060.png)
+![Untitled](Public%20Cloud%2003/Untitled%2060.png)
 
 1. Network 통신 테스트
 
@@ -681,9 +681,9 @@ PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
 > 
 1. vpc endpoint 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2061.png)
+![Untitled](Public%20Cloud%2003/Untitled%2061.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2062.png)
+![Untitled](Public%20Cloud%2003/Untitled%2062.png)
 
 1. network-02 ec2에 다시 접속하여 실행.
 
@@ -710,41 +710,41 @@ PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
 > SSM VPC Endpoint 생성(Interface Type)
 > 
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2063.png)
+![Untitled](Public%20Cloud%2003/Untitled%2063.png)
 
 → network-02는 외부에서 접근이 불가능한 상태라 session manager 사용 불가.
 → session manager를 사용할 수 있도록 vpc endpoint 생성.
 
 1. SSM VPC Endpoint용 Security Group 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2064.png)
+![Untitled](Public%20Cloud%2003/Untitled%2064.png)
 
 1. VPC Endpoint 생성
 - Endpoint 생성 전 lab-edu-vpc-ap-01 VPC DNS 설정에서 DNS 호스트 이름 활성화.
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2065.png)
+![Untitled](Public%20Cloud%2003/Untitled%2065.png)
 
 - SSM Endpoint 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2066.png)
+![Untitled](Public%20Cloud%2003/Untitled%2066.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2067.png)
+![Untitled](Public%20Cloud%2003/Untitled%2067.png)
 
 - SSMessages Endpoint 생성.
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2068.png)
+![Untitled](Public%20Cloud%2003/Untitled%2068.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2069.png)
+![Untitled](Public%20Cloud%2003/Untitled%2069.png)
 
 - EC2Messages Endpoint 생성
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2070.png)
+![Untitled](Public%20Cloud%2003/Untitled%2070.png)
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2071.png)
+![Untitled](Public%20Cloud%2003/Untitled%2071.png)
 
 1. SSM이용 Network Server 접속
 
-![Untitled](Public%20Cloud%2003%20fa2fa274a151493d9cfad2e7dcd76e91/Untitled%2072.png)
+![Untitled](Public%20Cloud%2003/Untitled%2072.png)
 
 → Endpoint를 생성함으로써 Session Manager로 인스턴스에 연결이 가능해짐.
 
